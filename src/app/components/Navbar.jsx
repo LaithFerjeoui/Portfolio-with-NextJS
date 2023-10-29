@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import { motion } from 'framer-motion' ;
 
 const navLinks = [
   {
@@ -24,15 +25,13 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#0f1525] bg-opacity-100  ">
+    <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 bg-[#030610] bg-opacity-100 z-50 ">
     <div className="absolute w-[50%] inset-0 gradient-01"/>
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2 ">
-        <Link
-          href={"/"}
-          className="text-2xl md:text-5xl text-white font-semibold"
-        >
-          Portfolio
-        </Link>
+ 
+       <img src="./images/logo.png" alt="logo" className="md:w-[6%] lg:w-[3%] w-[7%] h-[7%]"/>
+  
+        
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button

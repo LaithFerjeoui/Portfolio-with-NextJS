@@ -2,9 +2,30 @@
 import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import FacebookIcon from "../../../public/facebook.png";
 import Link from "next/link";
 import Image from "next/image";
-
+import { motion } from 'framer-motion';
+export const footerVariants = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+    transition: {
+      type: 'spring',
+      stiffness: 300,
+      damping: 140,
+    },
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 80,
+      delay: 0.1,
+    },
+  },
+};
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
@@ -40,7 +61,10 @@ const EmailSection = () => {
   };
 
   return (
-    <section
+    <motion.section 
+    variants={footerVariants}
+    initial="hidden"
+    whileInView="show"
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative z-10"
     >
@@ -56,11 +80,14 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com/LaithFerjeoui">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link href="https://www.linkedin.com/in/laith-ferjeoui-22507226a/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          </Link>
+          <Link href="https://www.facebook.com/laith.ferjaoui.1/">
+            <Image src={FacebookIcon} className="w-[8%] pad" alt="Github Icon" />
           </Link>
         </div>
       </div>
@@ -126,7 +153,7 @@ const EmailSection = () => {
           </form>
         )}
       </div>
-    </section>
+    </motion.section>
   );
 };
 
