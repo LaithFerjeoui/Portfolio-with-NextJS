@@ -39,7 +39,7 @@ const projectsData = [
     image: "/images/projects/4.jpg",
     tag: ["All", "FrontEnd"],
     gitUrl: "https://github.com/LaithFerjeoui/online-image-editor-ipgets.git",
-    previewUrl: "/",
+    previewUrl: "https://e-poster-ipgets.netlify.app",
   },
   {
     id: 5,
