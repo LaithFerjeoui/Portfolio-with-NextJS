@@ -114,6 +114,15 @@ border-radius: 50%;
 overflow: hidden;
 justify-self: center;
 }
+
+/* Media query for screens with a maximum width of 640px (sm screens) */
+@media screen and (max-width: 640px) {
+  .box {
+    width: 375px;
+    height: 375px;
+    margin:auto;
+  }
+}
 .box::before
 {
 content: '';

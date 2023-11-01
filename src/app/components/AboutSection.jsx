@@ -46,7 +46,7 @@ const fadeInAnimationVariants={
   opacity: 1,
   y: 0,
   transition: {
-    delay: 0.4,
+    delay: 0.6,
   },
   }),
 };
@@ -130,8 +130,7 @@ const AboutSection = () => {
       <div className="md:grid grid-cols-2 lg:grid-cols-2 md:grid-cols-1 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 relative z-10 fix">
         <motion.div
          initial="hidden"
-         animate="show"
-         viewport={{ once: false}}
+         whileInView="show"
         variants={fadeIn('right', 'tween', 0.2, 1)}
         className="box">
           <div className="content">
@@ -142,7 +141,8 @@ const AboutSection = () => {
     <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
       <motion.div
         initial="hidden"
-        animate="show"
+       viewport={{once:true,}}
+        whileInView="show"
         variants={fadeIn('left', 'tween', 0.2, 1)}>
           
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
@@ -177,7 +177,7 @@ const AboutSection = () => {
           <motion.div variants={fadeInAnimationVariants}
           initial="initial"
           whileInView="animate" 
-          viewport={{once:true,}}
+          
            className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
           </motion.div>

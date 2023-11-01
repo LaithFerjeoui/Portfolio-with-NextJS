@@ -66,7 +66,7 @@ const EmailSection = () => {
     initial="hidden"
     whileInView="show"
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative z-10"
+      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative z-10 "
     >
     <div className="gradient-02"/>
       <div className="z-10">
