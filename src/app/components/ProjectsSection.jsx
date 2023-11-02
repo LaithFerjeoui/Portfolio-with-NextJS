@@ -25,7 +25,7 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "E-commerce Application 'One Percent'",
+    title: "E-commerce Application One Percent",
     description: "One Percent is a Full Stack e-commerce website that sells gym suppliments made with Laravel and Filament",
     image: "/images/projects/3.png",
     tag: ["All", "Full Stack"],
