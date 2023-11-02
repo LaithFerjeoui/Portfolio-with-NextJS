@@ -134,7 +134,7 @@ const AboutSection = () => {
         variants={fadeIn('right', 'tween', 0.2, 1)}
         className="box">
           <div className="content">
-            <img src="./images/about.jpg" alt="Laith's Picture" />
+            <img src="./images/about.jpg" alt="Laith&apos;s Picture" />
           </div>
           </motion.div>
         
@@ -148,7 +148,7 @@ const AboutSection = () => {
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
           I am a passionate full stack web developer with a penchant for creating interactive, responsive applications. With proficiency in JavaScript, React, NextJS, Node.js, Laravel, and more, I merge a minimalist design philosophy with digital craftsmanship and <span className="awesome">Modern UIs</span>. <br />
-          My approach to web development involves crafting immersive online experiences that seamlessly blend aesthetics with functionality. A quick learner and a team player, I'm dedicated to expanding my skill set and working collaboratively to create remarkable applications.
+          My approach to web development involves crafting immersive online experiences that seamlessly blend aesthetics with functionality. A quick learner and a team player, I&apos;m dedicated to expanding my skill set and working collaboratively to create remarkable applications.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
