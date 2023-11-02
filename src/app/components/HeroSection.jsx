@@ -21,7 +21,7 @@ const HeroSection = () => {
           <div className="gradient-03 relative z-0"/>
 
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold relative z-10">
-            <span className="text-gradient text-transparent bg-clip-text bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-indigo-200 via-slate-600 to-indigo-200">
+            <span className="text-gradient text-transparent bg-clip-text bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-200 via-violet-600 to-sky-900 from-indigo-200 via-slate-600 to-indigo-200">
               Hello, I&apos;m{" "}
             </span>
             <br></br>
